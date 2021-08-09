@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rem 7rem 10rem 7rem;
+
+  &_card {
+    display: inline-block;
+    margin: 0 4.5rem;
+    width: 35rem;
+
+    p {
+      display: inline-block;
+      font-size: 1.7rem;
+      color: $color-black;
+      line-height: 2.6rem;
+      margin-top: 1rem;
+    }
+
+    img {
+      // height: 3rem;
+      // width: 6rem;
+      margin: 1rem;
+    }
+
+    &_button {
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: $color-secondary;
+      color: $color-white;
+      width: 8.5rem;
+      height: 3.5rem;
+      border-radius: 3.2rem;
+      align-content: center;
+      font-weight: 300;
+      font-size: 1.9rem;
+      margin: 2rem;
+      margin-left: 0;
+      padding-top: 0.2rem;
+    }
+  }
+}

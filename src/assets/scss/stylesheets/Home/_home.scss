@@ -1,0 +1,318 @@
+//
+//
+//
+//
+//
+//
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  .pls_link {
+    display: inline-block;
+    height: 9rem;
+    width: 24rem;
+  }
+
+  p {
+    display: inline-block;
+    margin: auto 2rem;
+  }
+
+  .qr_link {
+    display: inline-block;
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+.head_container {
+  // display: flex;
+  // align-items: center;
+  padding-top: 2rem;
+  height: 85vh;
+  &_texts {
+    display: inline-block;
+    height: 40rem;
+    width: 60rem;
+    margin: 6rem 0rem 6rem 13rem;
+
+    &_subheading {
+      display: inline-block;
+      width: 45rem;
+      margin-top: 1rem;
+      margin-top: 0.31rem;
+    }
+
+    .video_link {
+      .para {
+        display: inline-block;
+        width: 50rem;
+        margin-top: 4rem;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.image_container {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  display: inline-block;
+
+  &_image {
+    display: inherit;
+    height: 85vh;
+    width: 65rem;
+    margin: 3rem 0 0 3rem;
+  }
+
+  .image_1 {
+    position: absolute;
+    overflow-x: hidden;
+    height: 35rem;
+    width: 62rem;
+    bottom: 4px;
+    right: 0rem;
+    z-index: 0;
+  }
+
+  .image_2 {
+    position: absolute;
+
+    height: 35rem;
+    width: 40rem;
+    overflow-x: hidden;
+    bottom: 206px;
+    right: 0rem;
+    z-index: 0;
+  }
+
+  .image_3 {
+    z-index: 0;
+    height: 85vh;
+    width: 65rem;
+    position: absolute;
+    overflow-x: hidden;
+    bottom: 4px;
+    right: 0;
+  }
+}
+
+//////INFO Section//////
+
+.info_container {
+  padding: 5rem 13rem;
+  padding-bottom: 10rem;
+  background-color: $color-white;
+  h2 {
+    margin: 5rem 0;
+  }
+  &_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 16rem;
+    margin-top: 5rem;
+    width: 70rem;
+    &_img {
+      display: inline-block;
+      margin: 2rem 0;
+      height: 14.4rem;
+      width: 14.4rem;
+    }
+
+    &_text {
+      display: inline-block;
+      width: 50rem;
+      padding-left: 5rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+///Steps Section///
+
+.steps_container {
+  padding: 5rem 13rem;
+  padding-bottom: 10rem;
+  background-color: $color-tertiary;
+
+  h2 {
+    margin: 5rem 0;
+  }
+  &_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+    &_content {
+      width: 50%;
+      padding: 2rem;
+      &_subheading {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+      }
+      &_heading {
+        font-size: 3.6rem;
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+      &_step {
+        .links {
+          .pls_link {
+            height: 6.8rem !important;
+            width: 18rem !important;
+          }
+          .qr_link {
+            height: 6.5rem !important;
+            width: 6.5rem !important;
+          }
+        }
+      }
+    }
+
+    &_image {
+      position: relative;
+      margin-left: 5rem;
+
+      &_circle {
+        // z-index: 0;
+        right: 0;
+        position: absolute;
+      }
+      &_step {
+        position: relative;
+      }
+    }
+  }
+
+  &_card:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    // &_image {
+    //   position: relative;
+    //   margin-left: 5rem;
+
+    .steps_container_card_image_circle {
+      // z-index: 0;
+
+      left: 0;
+      position: absolute;
+    }
+    //   &_step {
+    //     position: relative;
+    //   }
+    // }
+  }
+}
+
+///Download Container///
+.download_container {
+  // padding: 5rem 13rem;
+  // padding-bottom: 10rem;
+
+  &_primary {
+    padding: 5rem 13rem;
+    background-color: $color-white;
+
+    h2 {
+      margin: 5rem 0;
+    }
+    &_logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      margin: 5rem;
+      &_logo {
+        padding: 2rem 5rem;
+
+        p {
+          width: 25rem;
+        }
+      }
+    }
+  }
+
+  &_secondary {
+    padding: 5rem 13rem;
+    background-color: $color-secondary;
+    color: $color-white;
+
+    h2 {
+      margin: 5rem 0;
+    }
+    .links {
+      margin: 3.5rem 0.5rem;
+    }
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+///Stories Container ///
+
+.stories_container {
+  padding: 5rem 13rem;
+  padding-bottom: 10rem;
+  background-color: $color-white;
+
+  h2 {
+    margin: 5rem 0;
+  }
+
+  .story {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+
+    &_data {
+      width: 60%;
+      &_text {
+        font-size: 2.4rem;
+      }
+      &_subtext {
+        font-size: 2rem;
+        h4,
+        p {
+          display: inline;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &_img {
+      img {
+        width: 450px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+///Questions Container ///
+
+.questions_container {
+  padding: 5rem 13rem;
+  padding-bottom: 10rem;
+  background-color: $color-tertiary;
+  h2 {
+    margin: 5rem 0;
+  }
+  a {
+    display: inline-block;
+    color: #3173e1;
+    text-decoration: none;
+    padding-top: 4rem;
+  }
+}

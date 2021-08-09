@@ -1,0 +1,60 @@
+//
+//
+//
+//
+//
+.logo {
+  display: inline-block;
+  height: 3.5rem;
+  width: 18rem;
+}
+
+.navigation {
+  &_background {
+    padding: 2.5rem 13rem 2.5rem 13rem;
+  }
+  &_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  &_items {
+    display: flex;
+    flex-direction: row;
+  }
+  &_item {
+    height: inherit;
+    margin: 1rem 2.5rem 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+
+    a {
+      font-size: $font-size1;
+      color: $color-grey-secondary;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+
+    a:focus {
+      color: #3173e1;
+    }
+  }
+}
+
+//Temporary Code for dissabled buttons
+.disabled_button {
+  margin-right: 2rem;
+
+  a {
+    border: 2px solid#C4C4C4;
+    border-radius: 30px;
+    pointer-events: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.6rem !important;
+    font-weight: 300;
+    color: #c4c4c4 !important;
+  }
+}
